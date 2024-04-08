@@ -79,7 +79,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.home__data, .home__img, .home__image, .about__img, .about__data, .visit__data`
+  `.home__data, .home__img, .home__image, .about__img, .about__data, .visit__data, .gallery`
 );
 
 sr.reveal(` .footer__img-1, .footer__img-2`, {
@@ -105,4 +105,23 @@ sr.reveal(`.favorite__card img`, {
   interval: 100,
   rotate: { z: 15 },
   distance: 0,
+});
+
+const swiper = new Swiper("#gallery-1", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2,
+    slideShadows: false,
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
 });

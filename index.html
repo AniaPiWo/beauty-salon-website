@@ -12,6 +12,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Beauty Salon</title>
   </head>
@@ -27,10 +32,12 @@
             <li class="nav__item">
               <a href="#about" class="nav__link">O nas</a>
             </li>
-            <li class="nav__item">
+            <!--    <li class="nav__item">
               <a href="#favorite" class="nav__link">Oferta</a>
+            </li> -->
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">Galeria</a>
             </li>
-
             <li class="nav__item">
               <a href="#visit" class="nav__link">Kontakt</a>
             </li>
@@ -49,10 +56,12 @@
 
     <main class="main">
       <section class="home section" id="home">
-        <img src="assets/img/leaves.jpg" alt="image" class="home__bg" />
+        <!--  <img src="assets/img/leaves.jpg" alt="image" class="home__bg" /> -->
         <div class="home__shadow"></div>
 
-        <div class="home__container container grid">
+        <div class="home__container container grid"></div>
+
+        <!--  <div class="home__container container grid">
           <div class="home__data">
             <h1 class="home__title">
               Odkryj <br />
@@ -91,64 +100,8 @@
               </a>
             </div>
           </footer>
-        </div>
+        </div> -->
       </section>
-
-      <!--       <section class="new section" id="new">
-        <h2 class="section__title">New Breads</h2>
-
-        <div class="new__container container grid">
-          <div class="new__content grid">
-            <article class="new__card">
-              <div class="new__data">
-                <h2 class="new__title">Rye Bread</h2>
-                <p class="new__description">
-                  Baked with healthy, gluten-free sourdough for good nutrition.
-                </p>
-              </div>
-
-              <img
-                src="assets/img/new-bread-1.png"
-                alt="image"
-                class="new__img"
-              />
-            </article>
-
-            <article class="new__card">
-              <div class="new__data">
-                <h2 class="new__title">Whole Grain Bread</h2>
-                <p class="new__description">
-                  Crispy and homemade prepared from organic yeast-free flour.
-                </p>
-              </div>
-
-              <img
-                src="assets/img/new-bread-2.png"
-                alt="image"
-                class="new__img"
-              />
-            </article>
-
-            <article class="new__card">
-              <div class="new__data">
-                <h2 class="new__title">Multigrain Bread</h2>
-                <p class="new__description">
-                  Tasty and made with different natural grains from the
-                  countryside.
-                </p>
-              </div>
-
-              <img
-                src="assets/img/new-bread-3.png"
-                alt="image"
-                class="new__img"
-              />
-            </article>
-          </div>
-
-          <a href="#" class="new__button button">See More Breads</a>
-        </div>
-      </section> -->
 
       <section class="about section" id="about">
         <div class="about__container container grid">
@@ -156,21 +109,21 @@
             <h2 class="section__title">O nas</h2>
 
             <p class="about__description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo quaerat voluptates commodi enim porro, nemo nostrum
-              vitae modi magnam vero consectetur deleniti sint eos. Quisquam
-              similique nostrum dolorum, voluptas perspiciatis neque quasi modi,
-              ducimus sed in, sapiente illo accusantium qui?
+              Zapraszamy do naszego salonu, gdzie nie tylko zadbasz o swoje
+              piękno, ale także odpoczniesz w przyjemnej atmosferze, ciesząc się
+              wyjątkową kawą. Oferujemy szeroki zakres usług, w tym stylizację
+              paznokci, zabiegi kosmetyczne, fryzjerstwo oraz profesjonalną
+              stylizację rzęs.
             </p>
 
-            <a href="#" class="button">Nasza oferta</a>
+            <a href="#gallery" class="button">Nasze prace</a>
           </div>
 
           <img src="assets/img/mani.jpg" alt="image" class="about__img" />
         </div>
       </section>
 
-      <section class="favorite section" id="favorite">
+      <!--       <section class="favorite section" id="favorite">
         <h2 class="section__title">Nasza oferta</h2>
 
         <div class="favorite__container container">
@@ -182,13 +135,93 @@
             sequi fugit incidunt quasi fuga a ut impedit ipsam. Doloremque amet
             voluptatem sed quam vel repudiandae architecto distinctio?
           </p>
-          <p>tutaj bedzie przewijana galeria zdjec</p>
+        </div>
+      </section> -->
+
+      <section class="gallery section" id="gallery">
+        <h2 class="section__title">Nasze prace</h2>
+
+        <div class="gallery__container gallery container">
+          <div class="swiper" id="gallery-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-9.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-10.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-11.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-12.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-13.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-14.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-15.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-16.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-17.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-18.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-19.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-20.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-21.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-22.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/nails/nails-23.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
 
       <section class="visit section" id="visit">
         <div class="visit__container">
-          <img src="assets/img/home-bg.jpg" alt="image" class="visit__bg" />
+          <img src="assets/img/leaves.jpg" alt="image" class="visit__bg" />
           <div class="visit__shadow"></div>
 
           <div class="visit__content container">
@@ -203,9 +236,9 @@
             </div>
             <div class="visit__iframe hidden" id="iframe">
               <iframe
-                width="100%"
-                height="100%"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1273.5552872359274!2d19.165869356430353!3d50.32718826942879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716da12206fbdbb%3A0xe7035a8c1bf1641b!2sPolskie%20P%C5%82aszcze%20HUNA!5e0!3m2!1spl!2spl!4v1700222524025!5m2!1spl!2spl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.602989826966!2d19.123227776821416!3d50.28067109957341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716daa3b5a7dd31%3A0xf6071e4b5dce5c63!2sStudio%20Urody%20Dolce%20Vita!5e0!3m2!1spl!2spl!4v1712582154819!5m2!1spl!2spl"
+                width="600"
+                height="450"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
@@ -225,6 +258,7 @@
             Salon kosmetyczny <br />
             i fryzjerski
           </p>
+          testing
         </div>
 
         <div class="footer__content grid">
@@ -287,6 +321,7 @@
       <i class="ri-arrow-up-line"></i>
     </a>
     <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
